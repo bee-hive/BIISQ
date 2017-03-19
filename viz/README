@@ -1,0 +1,12 @@
+# This is the readme for the visualizaiton code
+(1) The functions are coded in visualize_npb_iso.py, and the top script to wrap it is run_visualize_npb_iso.py
+(2) To run it and save log file, refer to run.script. 
+    The first argument is the path to the "outfile.p" of VarBayes.py code. 
+    This is also the path to save the results of isoform proportions ("results.txt").
+    Those results are also printed during runtime.
+    The second argument is the exon length file (like in the example_exon_len.txt) for RPKM calculation.
+    The third argument is a flag (0/1) to indicate if you want to plot the results for each iteration.
+    The fourth argument is an integer flag (0 or 1 for now) to indicate the method to compute global and individual isoform proportion. 0 means using t or global and psi for individual.
+    The fifth argument is a flag to skip plotting or not.
+    The sixth argument is the flag to save html or not.
+(3) An example of the script is in run.script.

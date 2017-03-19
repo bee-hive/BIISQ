@@ -1,0 +1,13 @@
+import sys
+from distutils.core import setup, Extension
+from Cython.Build import cythonize
+
+compile_args = ['-I/n/fs/biisq/isoform/tools/npb-iso/src/pythoncode/VB']
+
+def make_ext(modname, pyxfilename):
+    from distutils.extension import Extension
+    return Extension(name=modname,
+                     sources=[pyxfilename],
+                     language='c++',
+                     extra_compile_args=compile_args)
+                     
