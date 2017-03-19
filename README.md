@@ -12,15 +12,19 @@ Required packages: joblib cython numpy scipy
 ### for an existing installation of python/anaconda
 
 If you have a working anaconda or python installation, then:
+
+```
 pip install --user numpy
 pip install --user scipy
 pip install --user joblib
 pip install --user cython
+```
 
 ### for a new installation of Python 2 (2.7+)
 
 If you would like to install via a new vitual environment, then:
 
+```
 VIRT_HOME=/n/fs/biisq/virtenvs
 cd $VIRT_HOME
 virtualenv biisq_env
@@ -30,16 +34,18 @@ pip install numpy
 pip install scipy
 pip install cython
 pip install joblib
+```
 
 ## installation of BIISQ
 
+```
 git clone https://github.com/bee-hive/BIISQ.git
 cd BIISQ/examples/ex_gene_1/
 sh ex_gene_1_run.sh
 cd viz
 sh run_viz.sh
-
-there is another example for paired end data in BIISQ/examples/paired_end
+```
+there is another example for paired end data in BIISQ/examples/paired_end.
 
 Running this script will summarize transcript composition and quantification.
 By default results will be stored in BIISQ/examples/ex_gene_1/output.
